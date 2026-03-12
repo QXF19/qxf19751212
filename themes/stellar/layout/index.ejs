@@ -2,8 +2,12 @@
 <link rel="stylesheet" href="<%= url_for('/css/home.css') %>">
 <section class="qxf-hero" id="top">
   <div class="qxf-hero-nav">
-    <div>QXF</div>
-    <a href="#contact">联系</a>
+    <div class="qxf-logo">QXF</div>
+    <div class="qxf-hero-menu">
+      <a href="#articles">文章</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
+    </div>
   </div>
   <div class="qxf-hero-content">
     <p class="qxf-eyebrow"><%= profile.hero?.eyebrow %></p>

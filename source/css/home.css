@@ -32,6 +32,27 @@
   letter-spacing: 0.1rem;
 }
 
+
+.qxf-logo {
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.qxf-hero-menu {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.qxf-hero-menu a {
+  color: var(--qxf-muted);
+  text-decoration: none;
+}
+
+.qxf-hero-menu a:hover {
+  color: var(--qxf-accent);
+}
 .qxf-hero-content {
   max-width: 760px;
   margin-top: 2rem;
