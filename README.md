@@ -11,16 +11,20 @@ Hexo 8 站点，主题为 [hexo-theme-stellar](https://github.com/xaoxuu/hexo-th
 ```bash
 npm install
 
-# 与线上 root 一致（便于模拟 GitHub Pages）
+# 本地开发（root=/，适合 http://localhost:4000/2025/...）
 npm run dev
 
-# 本地直接访问 http://localhost:4000/2025/... 可用
-npm run dev:local
+# 复现 GitHub Pages 根路径（/qxf19751212/）可用
+npm run dev:pages
 ```
 
 ## 构建
 ```bash
+# 生产构建（自动加载 _config.gh.yml，和 GitHub Pages 一致）
 npm run build
+
+# 本地纯预览
+npm run build:local
 ```
 
 ## 内容与样式
@@ -35,5 +39,6 @@ npm run build
 ## 部署 (GitHub Pages)
 1. 仓库 Settings → Actions → General 中把 Workflow permissions 设为 **Read and write**。
 2. 确认 `.github/workflows/deploy.yml` 已存在（我已创建）。
-3. 每次 push 到 `main`，GitHub Actions 会自动执行：`npm ci` → `npm run build` → 将 `public/` 发布到 `gh-pages` 分支。
+3. 每次 push 到 `main`，GitHub Actions 会自动执行：`npm ci` → `npm run build`（带 `_config.gh.yml`）→ 将 `public/` 发布到 `gh-pages` 分支。
 4. 仓库 Settings → Pages 选择来源 `gh-pages` / `root`，几分钟后即可通过 `https://qxf19.github.io/qxf19751212/` 访问。
+```
