@@ -4,7 +4,7 @@ hero:
   lead: 我在秦野科创与 CVA 组织推动前沿科技落地，把抽象的技术路线转化为真正改善城市、产业与个体体验的解决方案。
   primary_cta:
     label: 查看实践
-    href: #projects
+    href: #articles
   secondary_cta:
     label: 了解我
     href: #about
@@ -30,7 +30,7 @@ cva:
     - title: 模块化能力库
       text: 沉淀 AI 视觉、语音、机器人控制等能力，通过 API/SDK 面向伙伴开放。
     - title: 场景共创
-      text: 把社区、医疗、物流等场景拆解为任务清单，与伙伴快速迭代。
+      text: 把社区、医疗、物流等场景拆解成任务清单，与伙伴快速迭代。
 projects:
   - title: '01 / CVA 城市数字底座'
     text: 构建多源数据治理与实时可视化底座，调和政府、企业、社区的数据粒度，支撑 5 个示范区运营决策。
@@ -50,12 +50,65 @@ timeline:
     text: 落地多个城市示范区，完成社区级 AI 感知网络部署。
   - year: '2024+'
     text: 把理念拓展到教育、健康与公共服务，让科技真正贴近每个人。
+articles:
+  - title: 最强下载工具 Motrix
+    date: 2025-12-03
+    summary: 多协议跨平台的桌面级下载器，聚合 BT、磁力、HTTP/FTP。
+    link: https://qxf0975.github.io/2025/12/03/7311/
+  - title: 最强分区助手
+    date: 2025-10-07
+    summary: 一站式磁盘分区、备份、扩容方案，适合装机与维护。
+    link: https://qxf0975.github.io/2025/10/07/wew/
+  - title: 最强驱动工具
+    date: 2025-09-16
+    summary: 自动识别硬件、批量安装驱动，覆盖老旧与新机型。
+    link: https://qxf0975.github.io/2025/09/16/qxf2975/
+  - title: 最强解压工具
+    date: 2025-09-16
+    summary: 支持多种压缩格式与密码字典，适合工程文件与镜像包。
+    link: https://qxf0975.github.io/2025/09/16/qxf1975/
+  - title: 8 月 24 日兽聚
+    date: 2025-08-25
+    summary: 线下社群记录，沉淀 IP 共创与活动观察。
+    link: https://qxf0975.github.io/2025/08/25/0901/
+  - title: 7 月 27 兽聚照片
+    date: 2025-08-16
+    summary: 影像志，记录社群成员与场景故事。
+    link: https://qxf0975.github.io/2025/08/16/137/
+  - title: 系统镜像汇总
+    date: 2025-08-16
+    summary: 常用 Windows/Linux 镜像与校验信息，方便极速部署。
+    link: https://qxf0975.github.io/2025/08/16/731/
+  - title: 如何安装 VM 虚拟机
+    date: 2025-08-16
+    summary: 手把手教程，包含安装、配置与常见性能优化。
+    link: https://qxf0975.github.io/2025/08/16/shuju/
+  - title: KMS 激活原理与工具
+    date: 2025-08-16
+    summary: 解析 KMS 工作机制并整理常用工具合集。
+    link: https://qxf0975.github.io/2025/08/16/090/
+  - title: Hello World
+    date: 2025-08-15
+    summary: 项目起点，记录秦大人工作室公告与愿景。
+    link: https://qxf0975.github.io/2025/08/15/hello-world/
 contact:
-  text: 合作、咨询或想聊科技如何改变生活，都可以直接联系我。
+  text: 保持多通道响应，技术合作、内容授权、社群活动都可以通过以下方式直达我。
   links:
-    - label: hello@qxf.tech
-      href: mailto:hello@qxf.tech
+    - label: Outlook · QXF1975@outlook.com
+      href: mailto:QXF1975@outlook.com
+    - label: Cloudflare · qxf1975@qxf1975.xyz
+      href: mailto:qxf1975@qxf1975.xyz
+    - label: QQ · 3411057744
+      href: https://wpa.qq.com/msgrd?v=3&uin=3411057744&site=qq&menu=yes
+    - label: Telegram 群聊
+      href: https://t.me/+OSyMg_1SxKdhMGFh
+    - label: Twitter · @ren_qxf1975
+      href: https://twitter.com/ren_qxf1975
+    - label: Bilibili
+      href: https://space.bilibili.com/3546380417108876
     - label: GitHub
-      href: https://github.com/QXF19/qxf19751212
+      href: https://github.com/QXF19
+    - label: Gitee
+      href: https://gitee.com/qxf1975
     - label: 返回顶部 ↑
       href: #top

@@ -78,6 +78,28 @@
   </div>
 </section>
 
+<section class="qxf-section" id="articles">
+  <div class="qxf-section-heading">
+    <p class="qxf-eyebrow">WRITING</p>
+    <h2>文章 · 项目复盘</h2>
+  </div>
+  <div class="qxf-article-list">
+    <% (profile.articles || []).forEach(article => { %>
+    <article class="qxf-article">
+      <div class="qxf-article-meta">
+        <span><%= article.date %></span>
+      </div>
+      <h3>
+        <a href="<%= article.link %>" target="_blank" rel="noreferrer">
+          <%= article.title %>
+        </a>
+      </h3>
+      <p><%= article.summary %></p>
+    </article>
+    <% }) %>
+  </div>
+</section>
+
 <section class="qxf-section">
   <div class="qxf-section-heading">
     <p class="qxf-eyebrow">TIMELINE</p>
@@ -101,8 +123,10 @@
   <div class="qxf-contact">
     <p><%= profile.contact?.text %></p>
     <div class="qxf-contact-links">
-      <% (profile.contact?.links || []).forEach(link => { %>
-      <a href="<%= link.href %>"><%= link.label %></a>
+      <% (profile.contact?.links || []).forEach(link => { const isAnchor = link.href && link.href.startsWith('#'); %>
+      <a href="<%= link.href %>" <%= isAnchor ? '' : 'target=\'_blank\' rel=\'noreferrer\'' %>>
+        <%= link.label %>
+      </a>
       <% }) %>
     </div>
   </div>
