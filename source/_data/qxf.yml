@@ -1,0 +1,61 @@
+hero:
+  eyebrow: 科技驱动 · 影响生活
+  title: 秦野科创，也为改变生活
+  lead: 我在秦野科创与 CVA 组织推动前沿科技落地，把抽象的技术路线转化为真正改善城市、产业与个体体验的解决方案。
+  primary_cta:
+    label: 查看实践
+    href: #projects
+  secondary_cta:
+    label: 了解我
+    href: #about
+metrics:
+  - value: '12+'
+    label: 智能系统落地
+  - value: 5城
+    label: 产业示范区
+  - value: '∞'
+    label: 改变生活的可能
+about:
+  - title: 架构思维
+    text: 先建立系统地图，再挑选工具与数据，把“做项目”升级为“搭可复用能力”。
+  - title: 工程落地
+    text: 关注端到端体验，把复杂生态缩短成可以上线迭代的产品节奏。
+  - title: 社会影响
+    text: 秦野科创的愿景是“也为改变生活”，每一步都围绕真实人群需求验证。
+cva:
+  intro: 我在 CVA 组织负责技术基座与生态伙伴协同，用“开放数据 + 模块化能力 + 场景共创”把不同领域的伙伴连接起来。
+  bullets:
+    - title: 开放数据中台
+      text: 统一接入城市、产业链与 IoT 数据流，提供实时洞察。
+    - title: 模块化能力库
+      text: 沉淀 AI 视觉、语音、机器人控制等能力，通过 API/SDK 面向伙伴开放。
+    - title: 场景共创
+      text: 把社区、医疗、物流等场景拆解为任务清单，与伙伴快速迭代。
+projects:
+  - title: '01 / CVA 城市数字底座'
+    text: 构建多源数据治理与实时可视化底座，调和政府、企业、社区的数据粒度，支撑 5 个示范区运营决策。
+    tags: [数据中台, 可视化, 治理]
+  - title: '02 / 社区级 AI 感知网络'
+    text: 在秦野科技社群部署边缘 AI 设备，处理安全、环境、助老等场景，把“智能”嵌进日常。
+    tags: [Edge AI, IoT, 社区]
+  - title: '03 / 生活方式创新实验室'
+    text: 用 CVA 能力库赋能创客团队，从智能家居到智慧康养，快速拉通供应链、资金与用户测试。
+    tags: [创新, 供应链, 用户验证]
+timeline:
+  - year: '2021'
+    text: 启动秦野科创，确立“技术改变生活”作为产品准则。
+  - year: '2022'
+    text: 加入 CVA 组织，构建开放数据中台与能力库。
+  - year: '2023'
+    text: 落地多个城市示范区，完成社区级 AI 感知网络部署。
+  - year: '2024+'
+    text: 把理念拓展到教育、健康与公共服务，让科技真正贴近每个人。
+contact:
+  text: 合作、咨询或想聊科技如何改变生活，都可以直接联系我。
+  links:
+    - label: hello@qxf.tech
+      href: mailto:hello@qxf.tech
+    - label: GitHub
+      href: https://github.com/QXF19/qxf19751212
+    - label: 返回顶部 ↑
+      href: #top
