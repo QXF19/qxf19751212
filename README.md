@@ -10,7 +10,12 @@ Hexo 8 站点，主题为 [hexo-theme-stellar](https://github.com/xaoxuu/hexo-th
 ## 安装 & 运行
 ```bash
 npm install
-npm run dev   # http://localhost:4000
+
+# 与线上 root 一致（便于模拟 GitHub Pages）
+npm run dev
+
+# 本地直接访问 http://localhost:4000/2025/... 可用
+npm run dev:local
 ```
 
 ## 构建
