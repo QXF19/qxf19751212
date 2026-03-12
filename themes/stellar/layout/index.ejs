@@ -1,0 +1,109 @@
+<% const profile = site.data.qxf || {}; %>
+<link rel="stylesheet" href="<%= url_for('/css/home.css') %>">
+<section class="qxf-hero" id="top">
+  <div class="qxf-hero-nav">
+    <div>QXF</div>
+    <a href="#contact">联系</a>
+  </div>
+  <div class="qxf-hero-content">
+    <p class="qxf-eyebrow"><%= profile.hero?.eyebrow %></p>
+    <h1><%= profile.hero?.title %></h1>
+    <p class="qxf-lead"><%= profile.hero?.lead %></p>
+    <div class="qxf-hero-cta">
+      <% if (profile.hero?.primary_cta) { %>
+      <a class="qxf-btn qxf-btn-primary" href="<%= profile.hero.primary_cta.href %>"><%= profile.hero.primary_cta.label %></a>
+      <% } %>
+      <% if (profile.hero?.secondary_cta) { %>
+      <a class="qxf-btn qxf-btn-ghost" href="<%= profile.hero.secondary_cta.href %>"><%= profile.hero.secondary_cta.label %></a>
+      <% } %>
+    </div>
+  </div>
+  <div class="qxf-hero-metrics">
+    <% (profile.metrics || []).forEach(metric => { %>
+    <div>
+      <div class="qxf-metric"><%= metric.value %></div>
+      <span class="qxf-label"><%= metric.label %></span>
+    </div>
+    <% }) %>
+  </div>
+</section>
+
+<section class="qxf-section" id="about">
+  <div class="qxf-section-heading">
+    <p class="qxf-eyebrow">WHO</p>
+    <h2>技术视角下的个人标签</h2>
+  </div>
+  <div class="qxf-card-grid">
+    <% (profile.about || []).forEach(item => { %>
+    <article class="qxf-card">
+      <h3><%= item.title %></h3>
+      <p><%= item.text %></p>
+    </article>
+    <% }) %>
+  </div>
+</section>
+
+<section class="qxf-section">
+  <div class="qxf-section-heading">
+    <p class="qxf-eyebrow">CVA 组织</p>
+    <h2>城市价值联盟（CVA）如何运转</h2>
+  </div>
+  <div class="qxf-cva">
+    <p><%= profile.cva?.intro %></p>
+    <ul>
+      <% (profile.cva?.bullets || []).forEach(item => { %>
+      <li><strong><%= item.title %>：</strong><%= item.text %></li>
+      <% }) %>
+    </ul>
+  </div>
+</section>
+
+<section class="qxf-section" id="projects">
+  <div class="qxf-section-heading">
+    <p class="qxf-eyebrow">PROJECTS</p>
+    <h2>秦野科创 · 代表性实践</h2>
+  </div>
+  <div class="qxf-card-grid">
+    <% (profile.projects || []).forEach(project => { %>
+    <article class="qxf-project">
+      <h3><%= project.title %></h3>
+      <p><%= project.text %></p>
+      <div class="qxf-project-tags">
+        <% (project.tags || []).forEach(tag => { %>
+        <span><%= tag %></span>
+        <% }) %>
+      </div>
+    </article>
+    <% }) %>
+  </div>
+</section>
+
+<section class="qxf-section">
+  <div class="qxf-section-heading">
+    <p class="qxf-eyebrow">TIMELINE</p>
+    <h2>从构想到影响的路径</h2>
+  </div>
+  <ol class="qxf-timeline">
+    <% (profile.timeline || []).forEach(node => { %>
+    <li>
+      <span><%= node.year %></span>
+      <p><%= node.text %></p>
+    </li>
+    <% }) %>
+  </ol>
+</section>
+
+<section class="qxf-section" id="contact">
+  <div class="qxf-section-heading">
+    <p class="qxf-eyebrow">CONTACT</p>
+    <h2>保持连线</h2>
+  </div>
+  <div class="qxf-contact">
+    <p><%= profile.contact?.text %></p>
+    <div class="qxf-contact-links">
+      <% (profile.contact?.links || []).forEach(link => { %>
+      <a href="<%= link.href %>"><%= link.label %></a>
+      <% }) %>
+    </div>
+  </div>
+</section>

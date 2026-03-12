@@ -81,7 +81,7 @@ exclude:
 ignore:
 
 # Theme
-theme: qxf-tech
+theme: stellar
 
 # Deployment
 deploy:
